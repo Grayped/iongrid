@@ -1,31 +1,81 @@
-# bun-tracker
+![IonGrid Logo](src/igl100.png)
+# IonGrid
 
-### TODO
+## Project Description
 
-- [ ] Turn boxes into components
-- [ ] Save stickes to database
-- [ ] Randomise sticky placement
+IonGrid is a prioritization matrix web application designed to help users effectively manage and prioritize tasks. Built with a focus on leveraging the full capabilities of the Bun runtime, it offers a robust and efficient platform for decision-making.
 
+## Features
 
+*   **Interactive Prioritization Matrix:** A 3x3 drag-and-drop grid powered by `@dnd-kit/react` for intuitive task prioritization.
+*   **Bun Runtime:** Developed to showcase and utilize various features of the Bun JavaScript runtime.
+*   **Modern Styling:** Styled with TailwindCSS for a clean, responsive, and modern user interface.
+*   **Data Persistence:** Uses Prisma with a local database file for simple data storage.
+*   **Secure Authentication:** Implements JWT (JSON Web Token) for secure user authentication and session management.
+*   **CSRF Protection:** Includes Cross-Site Request Forgery protection to enhance security.
+*   **Rate Limiting:** Protects against abuse and ensures fair usage with HTTP request rate limiting.
+*   **Logging:** Utilizes Winston for comprehensive and flexible logging.
+
+## Technologies Used
+
+*   **Runtime:** Bun
+*   **Framework/Library:** React
+*   **Styling:** TailwindCSS
+*   **ORM:** Prisma
+*   **Authentication:** JWT
+*   **Drag and Drop:** `@dnd-kit/react`
+*   **Logging:** Winston
+
+## Installation
+
+To get a local copy up and running, follow these simple steps.
+
+### Prerequisites
+
+*   Bun (https://bun.sh/)
+*   Node.js (for npm/yarn if needed for specific packages)
 
 ### Setup
 
-To install dependencies:
+1.  Clone the repository:
+    ```bash
+    git clone [YOUR_REPOSITORY_URL]
+    cd iongrid
+    ```
+2.  Install dependencies:
+    ```bash
+    bun install
+    ```
+3.  Set up environment variables (e.g., for JWT secret, database path). A `.env.example` file should be provided.
+4.  Run database migrations:
+    ```bash
+    bun prisma migrate dev
+    ```
+5.  Start the development server:
+    ```bash
+    bun dev
+    ```
 
-```bash
-bun install
-```
+## Usage
 
-To start a development server:
+(Coming soon)
 
-```bash
-bun dev
-```
+## Contributing
 
-To run for production:
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-```bash
-bun start
-```
+1.  Fork the Project
+2.  Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3.  Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4.  Push to the Branch (`git push origin feature/AmazingFeature`)
+5.  Open a Pull Request
 
-This project was created using `bun init` in bun v1.3.11. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+## Contact
+
+Gray Pedersen - grayp03@gmail.com
+
+Project Link: [https://github.com/Grayped/iongrid.git](https://github.com/Grayped/iongrid.git)
