@@ -1,6 +1,6 @@
 <p align="center">
 <img src="src/igl100.png" alt="IonGrid Logo" width="150" />
-</p> <h1 align="center">IonGrid</h1> <p align="center">
+</p> <h1 align="center">IonGrid Prioritization Matrix Web App</h1> <p align="center">
   <img src="https://img.shields.io/badge/Bun-%23000000.svg?style=for-the-badge&logo=bun&logoColor=white" alt="Bun" />
   <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
   <img src="https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white" alt="Prisma" />
