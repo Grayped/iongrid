@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+:root {
+  /* Use the v4 theme variable directly instead of @apply */
+  font-family: var(--font-sans);
+  background-color: var(--color-slate-950);
+}

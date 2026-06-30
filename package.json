@@ -1,0 +1,65 @@
+{
+  "name": "iongrid",
+  "version": "1.0.0",
+  "private": false,
+  "type": "module",
+  "description": "IonGrid is an interactive prioritization matrix web application built with Bun, React, and TailwindCSS. It helps users effectively manage and prioritize tasks with a 3x3 drag-and-drop interface, leveraging Bun runtime features.",
+  "keywords": [
+    "prioritization matrix",
+    "task management",
+    "productivity",
+    "Bun",
+    "React",
+    "TailwindCSS",
+    "drag and drop",
+    "web app",
+    "open source"
+  ],
+    "bugs": {
+    "url": "https://github.com/Grayped/iongrid/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Grayped/iongrid.git"
+  },
+  "license": "MIT",
+  "author": "Gray Pedersen grayp03@gmail.com",
+  "scripts": {
+    "dev": "bun --hot src/index.js",
+    "start": "NODE_ENV=production bun src/index.ts",
+    "compile:css": "bunx tailwindcss -i src/index.css -o dist/public/styles.css --minify",
+    "build": "bun build --target=bun --production --outdir=dist ./src/index.ts",
+    "migrate": "bunx --bun prisma migrate dev",
+    "generate": "bunx --bun prisma generate",
+    "deploy": "bunx prisma bun migrate deploy"
+  },
+  "dependencies": {
+    "@dnd-kit/helpers": "^0.4.0",
+    "@dnd-kit/react": "^0.4.0",
+    "@headlessui/react": "^2.2.10",
+    "@libsql/client": "^0.17.2",
+    "@prisma/adapter-better-sqlite3": "^7.6.0",
+    "@prisma/adapter-libsql": "^7.6.0",
+    "@prisma/client": "^7.6.0",
+    "bun-plugin-tailwind": "^0.1.2",
+    "jsonwebtoken": "^9.0.3",
+    "rate-limiter-flexible": "^11.2.0",
+    "react": "^19",
+    "react-dom": "^19",
+    "tailwindcss": "^4.3.2",
+    "winston": "^3.19.0",
+    "wouter": "^3.9.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.2",
+    "@types/bun": "^1.3.11",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^25.5.0",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "autoprefixer": "^10.5.2",
+    "postcss": "^8.5.16",
+    "prettier": "^3.8.1",
+    "prisma": "^7.6.0"
+  }
+}
